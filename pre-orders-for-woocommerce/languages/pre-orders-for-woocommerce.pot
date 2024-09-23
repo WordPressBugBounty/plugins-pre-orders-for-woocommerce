@@ -1,0 +1,621 @@
+# Copyright (C) 2024 Bright Plugins
+# This file is distributed under the same license as the Pre-Orders for WooCommerce plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Pre-Orders for WooCommerce 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pre-orders-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-10T16:02:06+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: pre-orders-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+msgid "Pre-Orders for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/pre-orders-for-woocommerce/"
+msgstr ""
+
+#. Description of the plugin
+msgid "Ultimate Preorders Plugin for WooCommerce."
+msgstr ""
+
+#. Author of the plugin
+msgid "Bright Plugins"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://brightplugins.com"
+msgstr ""
+
+#: elementor/widgets/available-date.php:12
+#: includes/elementor/widgets/available-date.php:12
+msgid "Pre-Order available date"
+msgstr ""
+
+#: elementor/widgets/available-date.php:34
+#: includes/elementor/widgets/available-date.php:34
+msgid "Available Date"
+msgstr ""
+
+#: elementor/widgets/available-date.php:42
+#: includes/elementor/widgets/available-date.php:42
+msgid "Available date Text"
+msgstr ""
+
+#: elementor/widgets/available-date.php:44
+msgid "Choose how the available date should be displayed. {date_format} = Default site date format (Ex: January 15, 2020)"
+msgstr ""
+
+#: elementor/widgets/available-date.php:52
+#: includes/elementor/widgets/available-date.php:52
+msgid "Alignment"
+msgstr ""
+
+#: elementor/widgets/available-date.php:56
+#: includes/elementor/widgets/available-date.php:56
+msgid "Left"
+msgstr ""
+
+#: elementor/widgets/available-date.php:60
+#: includes/elementor/widgets/available-date.php:60
+msgid "Center"
+msgstr ""
+
+#: elementor/widgets/available-date.php:64
+#: includes/elementor/widgets/available-date.php:64
+msgid "Right"
+msgstr ""
+
+#: elementor/widgets/available-date.php:83
+#: includes/elementor/widgets/available-date.php:83
+msgid "Title"
+msgstr ""
+
+#: elementor/widgets/available-date.php:91
+#: includes/elementor/widgets/available-date.php:91
+msgid "Text Color"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:36
+#: includes/elementor/widgets/preorder-products.php:36
+msgid "Pre-order Products"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:81
+#: includes/elementor/widgets/preorder-products.php:81
+msgid "Blog Posts"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:88
+#: includes/elementor/widgets/preorder-products.php:88
+msgid "Columns"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:90
+#: includes/elementor/widgets/preorder-products.php:90
+msgid "Set how many columns are show in each row"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:94
+#: includes/elementor/widgets/preorder-products.php:94
+msgid "3"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:95
+#: includes/elementor/widgets/preorder-products.php:95
+msgid "4"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:103
+#: includes/elementor/widgets/preorder-products.php:103
+msgid "Show Posts"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:105
+#: includes/elementor/widgets/preorder-products.php:105
+msgid "Set how many posts will show in widget"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:113
+#: includes/elementor/widgets/preorder-products.php:113
+msgid "Sort"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:116
+#: includes/elementor/widgets/preorder-products.php:116
+msgid "Designates the ascending or descending order of the ‘orderby‘ parameter. Defaults to ‘DESC’."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:118
+#: includes/elementor/widgets/preorder-products.php:118
+msgid "ASC"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:119
+#: includes/elementor/widgets/preorder-products.php:119
+msgid "DESC"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:127
+#: includes/elementor/widgets/preorder-products.php:127
+msgid "Order"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:130
+#: includes/elementor/widgets/preorder-products.php:130
+msgid "Sort retrieved posts by parameter. Defaults to Order by (title)’."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:132
+#: includes/elementor/widgets/preorder-products.php:132
+msgid "No order"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:133
+#: includes/elementor/widgets/preorder-products.php:133
+msgid "Order by ID."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:134
+#: includes/elementor/widgets/preorder-products.php:134
+msgid "Order by author."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:135
+#: includes/elementor/widgets/preorder-products.php:135
+msgid "Order by title."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:136
+#: includes/elementor/widgets/preorder-products.php:136
+msgid "Order by name (post slug)."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:137
+#: includes/elementor/widgets/preorder-products.php:137
+msgid "Order by date."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:138
+#: includes/elementor/widgets/preorder-products.php:138
+msgid "Random order."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:139
+#: includes/elementor/widgets/preorder-products.php:139
+msgid "Order by number of comments."
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:147
+#: includes/elementor/widgets/preorder-products.php:147
+msgid "Show Pagination"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:149
+#: includes/elementor/widgets/preorder-products.php:149
+msgid "Yes"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:150
+#: includes/elementor/widgets/preorder-products.php:150
+msgid "No"
+msgstr ""
+
+#: elementor/widgets/preorder-products.php:286
+#: includes/elementor/widgets/preorder-products.php:286
+msgid "No pre-order products found."
+msgstr ""
+
+#: includes/elementor/widgets/available-date.php:44
+msgid "Choose how the available date should be displayed. {date_format} = Default site date format (Ex: January 15, 2020 )"
+msgstr ""
+
+#: main.php:115
+msgid "Oops! looks like WooCommerce is disabled. Please, enable it in order to use WooCommerce Pre-Orders."
+msgstr ""
+
+#: src/Bootstrap.php:151
+msgid "No preorder products found."
+msgstr ""
+
+#: src/Bootstrap.php:199
+msgid "Support"
+msgstr ""
+
+#: src/Bootstrap.php:284
+msgid "Do you need full control over your Order Status Management? Try Bright Plugin's completely free <b>Custom Order Status Manager for WooCommerce</b> plugin. <a href=\""
+msgstr ""
+
+#: src/Bootstrap.php:346
+msgid "Pre Ordered <span class=\"count\">(%s)</span>"
+msgid_plural "Pre Ordered <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Cart.php:98
+msgid "We detected that you are trying to add a pre-order product in your cart. Please remove the rest of the products before proceeding."
+msgstr ""
+
+#: src/Cart.php:100
+msgid "We detected that your cart has pre-order products. Please remove them before being able to add this product."
+msgstr ""
+
+#: src/Checkout.php:182
+msgid "Pre-Order Date"
+msgstr ""
+
+#: src/Checkout.php:185
+msgid "Please enter the date when you want to receive your order"
+msgstr ""
+
+#: src/emails/class-wc-email-customer-preorder.php:32
+msgid "Pre-Order Order"
+msgstr ""
+
+#: src/emails/class-wc-email-customer-preorder.php:33
+msgid "This is an order notification sent to customers containing order details after an order is placed Pre-order."
+msgstr ""
+
+#: src/emails/class-wc-email-customer-preorder.php:61
+msgid "Your {site_title} Pre-Order has been received!"
+msgstr ""
+
+#: src/emails/class-wc-email-customer-preorder.php:72
+msgid "Thank you for your pre-order"
+msgstr ""
+
+#: src/emails/class-wc-email-customer-preorder.php:155
+msgid "We look forward to fulfilling your pre-order soon."
+msgstr ""
+
+#: src/emails/class-wc-email-new-preorder.php:29
+msgid "New pre-order"
+msgstr ""
+
+#: src/emails/class-wc-email-new-preorder.php:30
+msgid "New pre-order emails are sent to chosen recipient(s) when a new order is received."
+msgstr ""
+
+#: src/emails/class-wc-email-new-preorder.php:52
+msgid "[{site_title}]: New pre-order #{order_number}"
+msgstr ""
+
+#: src/emails/class-wc-email-new-preorder.php:63
+msgid "New Pre-Order: #{order_number}"
+msgstr ""
+
+#. translators: %s: list of placeholders
+#: src/emails/class-wc-email-new-preorder.php:146
+msgid "Available placeholders: %s"
+msgstr ""
+
+#: src/Notices.php:56
+msgid "Warning! you have selected certain products which are not available right now. You will have to choose a shipping date before you can place your order."
+msgstr ""
+
+#: src/Order.php:39
+msgid "Preorder Date"
+msgstr ""
+
+#. translators: number of days.
+#: src/Order.php:77
+#: src/Product.php:43
+msgid "Available in %s days"
+msgstr ""
+
+#: src/Order.php:80
+#: src/Product.php:45
+msgid "Available today"
+msgstr ""
+
+#: src/Order.php:82
+#: src/Product.php:36
+#: src/Product.php:47
+msgid "Already shipped"
+msgstr ""
+
+#: src/Settings.php:49
+msgid "General"
+msgstr ""
+
+#: src/Settings.php:68
+msgid "Pre-Order Modes"
+msgstr ""
+
+#: src/Settings.php:71
+msgid "Order only preorder products or available ones"
+msgstr ""
+
+#: src/Settings.php:73
+msgid "Treat the entire order as preordered"
+msgstr ""
+
+#: src/Settings.php:74
+msgid "Generate a separate order with all preordered products"
+msgstr ""
+
+#: src/Settings.php:75
+msgid "Generate a separate order for each preordered products"
+msgstr ""
+
+#: src/Settings.php:84
+msgid "Choose shipping date"
+msgstr ""
+
+#: src/Settings.php:86
+#: src/Settings.php:94
+#: src/Settings.php:104
+msgid "New feature added"
+msgstr ""
+
+#: src/Settings.php:87
+msgid "Allow customers to choose a desired shipping date on checkout page (after all products are available)."
+msgstr ""
+
+#: src/Settings.php:92
+msgid "Enable Pre-Order Bagde"
+msgstr ""
+
+#: src/Settings.php:97
+#: src/Settings.php:123
+msgid "Single Product Page"
+msgstr ""
+
+#: src/Settings.php:98
+msgid "Shop Page"
+msgstr ""
+
+#: src/Settings.php:102
+msgid "Badge Position (Shop)"
+msgstr ""
+
+#: src/Settings.php:107
+msgid "After Title (Recommended)"
+msgstr ""
+
+#: src/Settings.php:108
+msgid "Before Title"
+msgstr ""
+
+#: src/Settings.php:109
+msgid "Before Shop Loop"
+msgstr ""
+
+#: src/Settings.php:110
+msgid "After Shop Loop"
+msgstr ""
+
+#: src/Settings.php:112
+msgid "Where the preorder badge should be displayed (Catalog Pages)"
+msgstr ""
+
+#: src/Settings.php:118
+msgid "Display the Available Date"
+msgstr ""
+
+#: src/Settings.php:124
+msgid "Catalog Page(s)"
+msgstr ""
+
+#: src/Settings.php:125
+msgid "Cart Page"
+msgstr ""
+
+#: src/Settings.php:136
+msgid "Available Date Position"
+msgstr ""
+
+#: src/Settings.php:140
+msgid "Choose the position where the Available date Text will be displayed on the Single Product Page."
+msgstr ""
+
+#: src/Settings.php:142
+msgid "Before the pre-order button"
+msgstr ""
+
+#: src/Settings.php:143
+msgid "After the pre-order button"
+msgstr ""
+
+#: src/Settings.php:149
+msgid "Pre-Order Transition Status"
+msgstr ""
+
+#: src/Settings.php:153
+msgid "Choose which status should the order be set after the preorder date passed"
+msgstr ""
+
+#: src/Settings.php:160
+msgid "Disable Payment Methods"
+msgstr ""
+
+#: src/Settings.php:164
+msgid "Disable Payment gateway if cart has pre-order product(s)"
+msgstr ""
+
+#: src/Settings.php:165
+msgid "Select Payment method(s)"
+msgstr ""
+
+#: src/Settings.php:187
+msgid "Pre-Order Pay Later"
+msgstr ""
+
+#: src/Settings.php:191
+msgid "Consider enabling the Pay Later gateway which allows customers to make payments on the available date instead of immediately place the order"
+msgstr ""
+
+#: src/Settings.php:195
+msgid "Product Date Cycle"
+msgstr ""
+
+#: src/Settings.php:200
+msgid "In Stock"
+msgstr ""
+
+#: src/Settings.php:201
+msgid "Out of Stock"
+msgstr ""
+
+#: src/Settings.php:203
+msgid "Once the preorder is finished on it's date cycle, the stock status will be automatically change to selected status"
+msgstr ""
+
+#: src/Settings.php:207
+msgid "Unify Shipping Costs"
+msgstr ""
+
+#: src/Settings.php:212
+msgid "If you have more than 1 order is generated, let the customer pay only 1 shipment for all orders.<br> This option will use the shipment method as if it were only 1 order."
+msgstr ""
+
+#: src/Settings.php:216
+msgid "Disable Payment Methods (Pay Later)"
+msgstr ""
+
+#: src/Settings.php:218
+msgid "When the \"Pay Later\" method is active, ensure that all payment methods are disabled."
+msgstr ""
+
+#: src/Settings.php:223
+msgid "Pay Later Transition Status"
+msgstr ""
+
+#: src/Settings.php:226
+msgid "Choose which status should the order be set after the preorder date passed but order not paid by customer"
+msgstr ""
+
+#: src/Settings.php:241
+msgid "Pre-Order Button Label"
+msgstr ""
+
+#: src/Settings.php:243
+msgid "Change button title for pre-order products"
+msgstr ""
+
+#: src/Settings.php:247
+msgid "Pre-Order Status Label"
+msgstr ""
+
+#: src/Settings.php:250
+msgid "Change preorder status name"
+msgstr ""
+
+#: src/Settings.php:254
+msgid "Pre-Order Cart Notice"
+msgstr ""
+
+#: src/Settings.php:268
+msgid "Available Date Label"
+msgstr ""
+
+#: src/Settings.php:285
+msgid "Countdown Format"
+msgstr ""
+
+#: src/Settings.php:293
+msgid "Pre-Order Bagde Label"
+msgstr ""
+
+#: src/Settings.php:302
+msgid "Pre-Order Note"
+msgstr ""
+
+#: src/Settings.php:304
+msgid "The Pre-order date has been changed to {date_format}"
+msgstr ""
+
+#: src/Settings.php:306
+msgid "Add a note to customer if pre-order date change from order dashboard<br/> <strong>Available variable:</strong><br/> <code>{date_format}</code> = Default site date format ( January 15, 2020 )"
+msgstr ""
+
+#: src/Settings.php:312
+msgid "Regular Product Notice"
+msgstr ""
+
+#: src/Settings.php:321
+msgid "Pre-Order Product Notice"
+msgstr ""
+
+#: src/Settings.php:341
+msgid "Admin Notification"
+msgstr ""
+
+#: src/Settings.php:347
+msgid "Amount of days in advance that admins will get an e-mail notification when a preorder will be available.<br/> Leave 0 if you want to leave this feature disabled"
+msgstr ""
+
+#: src/Settings.php:351
+msgid "Customer Notification"
+msgstr ""
+
+#: src/Settings.php:355
+msgid "When preorder date will arrived customers will get email notification with order details"
+msgstr ""
+
+#: src/Settings.php:359
+msgid "Update Date Notification"
+msgstr ""
+
+#: src/Settings.php:363
+msgid "Send email notification to customers when preorder date is updated by using bulk-edit mode"
+msgstr ""
+
+#: src/Settings.php:371
+msgid "Email Templates"
+msgstr ""
+
+#: src/Settings.php:401
+msgid "Settings"
+msgstr ""
+
+#: src/Settings.php:402
+msgid "Pro Version"
+msgstr ""
+
+#: src/Settings.php:414
+msgid "Pre-Orders"
+msgstr ""
+
+#: src/Tabs.php:29
+#: src/Tabs.php:75
+msgid "Pre Order Product"
+msgstr ""
+
+#: src/Tabs.php:30
+#: src/Tabs.php:76
+msgid " Check this if you want to offer this product as pre-order"
+msgstr ""
+
+#: src/Tabs.php:38
+#: src/Tabs.php:84
+msgid "Pre Order Date"
+msgstr ""
+
+#: src/Tabs.php:42
+msgid "Choose when the product will be available."
+msgstr ""
+
+#. translators: %s: Customer billing full name
+#: templates/emails/admin-new-preorder.php:24
+#: templates/emails/plain/admin-new-preorder.php:23
+msgid "You’ve received the following order from %s:"
+msgstr ""
+
+#. translators: %s: Customer first name
+#: templates/emails/customer-preorder.php:23
+#: templates/emails/plain/customer-preorder.php:22
+msgid "Hi %s,"
+msgstr ""
+
+#: templates/emails/customer-preorder.php:24
+#: templates/emails/plain/customer-preorder.php:23
+msgid "Thanks for your pre-order. Here’s a reminder of what you ordered:"
+msgstr ""

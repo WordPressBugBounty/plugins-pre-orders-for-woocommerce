@@ -1,0 +1,54 @@
+<wpml-config>
+<custom-fields>
+    <custom-field action="copy">_is_pre_order</custom-field>
+    <custom-field action="copy">_pre_order_date</custom-field>
+    <custom-field action="copy">only_preorder</custom-field>
+    <custom-field action="copy">sent_new_preorder_email</custom-field>
+    <custom-field action="copy">_exclude_pre_order</custom-field>
+    <custom-field action="copy">_pre_order_stock_status</custom-field>
+    <custom-field action="copy">_preorder_fee</custom-field>
+  </custom-fields>
+  <admin-texts>
+    <key name="wc_preorder_badge_shop_page"/>
+    <key name="wc_preorder_badge_single_product"/>
+    <key name="wc_preorder_customer_notification"/>
+    <key name="wc_preorder_loop_badge_position"/>
+    <key name="wc_preorder_product_badge_position"/>
+    <key name="wc_preorders_after_completed"/>
+    <key name="wc_preorders_alert"/>
+    <key name="wc_preorders_always_choose_date"/>
+    <key name="wc_preorders_avaiable_date_cart_item"/>
+    <key name="wc_preorders_avaiable_date_checkout_item"/>
+    <key name="wc_preorders_avaiable_date_loop"/>
+    <key name="wc_preorders_avaiable_date_single_product"/>
+    <key name="wc_preorders_avaiable_date_text"/>
+    <key name="wc_preorders_available_date_single_product"/>
+    <key name="wc_preorders_badge_text"/>
+    <key name="wc_preorders_button_text"/>
+    <key name="wc_preorders_cart_product_text"/>
+    <key name="wc_preorders_change_button"/>
+    <key name="wc_preorders_countdown_format"/>
+    <key name="wc_preorders_disable_payment"/>
+    <key name="wc_preorders_mode"/>
+    <key name="wc_preorders_prevent_shipping_cost"/>
+    <key name="wc_preorders_product_date_cycle"/>
+    <key name="wc_preorders_reproder_label"/>
+    <key name="wc_preorders_shipping_label"/>
+    
+    <key name="woocommerce_new_preorder_settings">
+      <key name="enabled"/>
+      <key name="recipient"/>
+      <key name="subject"/>
+      <key name="heading"/>
+      <key name="additional_content"/>
+      <key name="email_type"/>
+    </key>
+    <key name="woocommerce_new_customer_preorder_settings">
+      <key name="enabled"/>
+      <key name="subject"/>
+      <key name="heading"/>
+      <key name="additional_content"/>
+      <key name="email_type"/>
+    </key>
+  </admin-texts>
+</wpml-config>

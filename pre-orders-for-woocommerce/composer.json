@@ -1,0 +1,19 @@
+{
+    "name": "brightvessel/woocommerce-preorders",
+    "description": "Preorder plugin for WooCommerce",
+    "type": "project",
+    "require": {
+        "appsero/client": "^1.2.3",
+        "collizo4sky/persist-admin-notices-dismissal": "^1.4",
+        "niloys7/remote-admin-notification-client": "dev-main"
+    },
+    "autoload": {
+        "files": [
+            "includes/codestar-framework/codestar-framework.php"
+            
+        ],
+        "psr-4": {
+            "Woocommerce_Preorders\\": "src/"
+        }
+    }
+}
