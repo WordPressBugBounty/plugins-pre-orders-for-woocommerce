@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'brightvessel/woocommerce-preorders',
-        'pretty_version' => '2.0.1.x-dev',
-        'version' => '2.0.1.9999999-dev',
-        'reference' => 'b7ff9d1213de3ea705698fde66bb7aed827aac54',
+        'pretty_version' => '2.0.2.x-dev',
+        'version' => '2.0.2.9999999-dev',
+        'reference' => '9e591e267be55fe057320e6172d323977d47fc1a',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         'appsero/client' => array(
-            'pretty_version' => 'v1.4.0',
-            'version' => '1.4.0.0',
-            'reference' => '43289d79f1d55de687f667b17a2834b986cc7b6e',
+            'pretty_version' => 'v2.0.4',
+            'version' => '2.0.4.0',
+            'reference' => '12ff65b9770286d21edf314e7acfcd26fdde3315',
             'type' => 'library',
             'install_path' => __DIR__ . '/../appsero/client',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'brightvessel/woocommerce-preorders' => array(
-            'pretty_version' => '2.0.1.x-dev',
-            'version' => '2.0.1.9999999-dev',
-            'reference' => 'b7ff9d1213de3ea705698fde66bb7aed827aac54',
+            'pretty_version' => '2.0.2.x-dev',
+            'version' => '2.0.2.9999999-dev',
+            'reference' => '9e591e267be55fe057320e6172d323977d47fc1a',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

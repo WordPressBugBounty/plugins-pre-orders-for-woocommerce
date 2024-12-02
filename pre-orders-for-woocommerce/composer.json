@@ -3,8 +3,8 @@
     "description": "Preorder plugin for WooCommerce",
     "type": "project",
     "require": {
-        "appsero/client": "^1.2.3",
-        "collizo4sky/persist-admin-notices-dismissal": "^1.4",
+        "appsero/client": "*",
+        "collizo4sky/persist-admin-notices-dismissal": "^1.4.5",
         "niloys7/remote-admin-notification-client": "dev-main"
     },
     "autoload": {

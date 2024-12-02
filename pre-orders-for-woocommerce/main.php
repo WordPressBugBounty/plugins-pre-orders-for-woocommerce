@@ -3,13 +3,13 @@
  * Plugin Name: Pre-Orders for WooCommerce
  * Plugin URI: https://wordpress.org/plugins/pre-orders-for-woocommerce/
  * Description: Ultimate Preorders Plugin for WooCommerce.
- * Version: 2.0.1
+ * Version: 2.0.2
  * Requires PHP: 7.2.0
  * Domain Path: /languages/
  * Requires Plugins: woocommerce
- * WC tested up to: 8.8.3
- * Tested up to: 6.5.3
- * WC requires at least: 4.0
+ * WC tested up to: 9.4.2
+ * Tested up to: 6.7.1
+ * WC requires at least: 5.0
  * Author: Bright Plugins
  * Author URI: https://brightplugins.com
  * Text Domain: pre-orders-for-woocommerce
@@ -28,7 +28,7 @@ if ( !defined( 'WCPO_PLUGIN_URL' ) ) {
 	define( 'WCPO_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 define( 'WCPO_TEMPLATE_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) . '/templates/' );
-define( 'WCPO_PLUGIN_VER', '2.0.1' );
+define( 'WCPO_PLUGIN_VER', '2.0.2' );
 
 use Woocommerce_Preorders\Bootstrap;
 

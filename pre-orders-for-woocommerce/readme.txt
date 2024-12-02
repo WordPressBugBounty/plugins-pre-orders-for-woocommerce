@@ -4,9 +4,9 @@ Requires at least: 5.0
 Tags: preorders,pre order,pre-orders,preorder
 Requires PHP: 7.2
 WC tested up to: 8.8.3
-Tested up to: 6.5.3
+Tested up to: 6.7.1
 WC requires at least: 4.0
-Stable tag: 2.0.1
+Stable tag: 2.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -174,6 +174,12 @@ This plugin works on the backend, so it will not affect your theme in most cases
 We do take feature requests [here](https://app.productstash.io/bright-plugins#/ideas).
 
 == Changelog ==
+
+= 2.0.2 – 28 Nov 2024 =
+* Fixed: `_load_textdomain_just_in_time` issue with WordPress 6.7.1
+* Update: Composer dependencies
+* Support for WooCommerce 9.4.x
+* Support for WordPress 6.7.1
 
 = 2.0.1 – 07 May 2024 =
 * Added: Declare Incompatible with 'cart_checkout_blocks'
