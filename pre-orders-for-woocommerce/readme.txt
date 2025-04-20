@@ -1,5 +1,5 @@
 === Pre-Orders for WooCommerce ===
-Contributors: brightvesseldev, niloybrightvessel, kleinmannbrightvessel
+Contributors: brightvesseldev, kleinmannbrightvessel
 Requires at least: 5.0
 Tags: preorders,pre order,pre-orders,preorder
 Requires PHP: 7.2
