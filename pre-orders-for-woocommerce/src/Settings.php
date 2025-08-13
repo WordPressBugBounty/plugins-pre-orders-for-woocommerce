@@ -3,6 +3,8 @@ namespace Woocommerce_Preorders;
 
 class Settings {
 
+    const CLUB_MEMBERSHIP_LINK = 'https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=settings_page&utm_campaign=upgrade_club_membership';
+
     protected $pluginBase             = WCPO_PLUGIN_BASE;
     protected $text_disabled          = '__disabled';
     protected $url_to_premiun_version = 'https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=freemium&utm_medium=settings_page&utm_campaign=upgrade_pro';
@@ -12,7 +14,9 @@ class Settings {
         add_action( 'admin_menu', array( $this, 'later' ), 99 );
         add_filter( "plugin_action_links_$this->pluginBase", [$this, 'wcpo_plugin_settings_link'] );
 
-        $this->plugin_options();
+		add_action( 'init', function(){
+			$this->plugin_options();
+        }, 9 );
         add_action( 'csf_bp_preorder_save_after', [$this, 'update_options'], 10, 1 );
     }
 
@@ -377,6 +381,39 @@ class Settings {
                 ),
             ),
         ) );
+
+
+        /**
+		 * Upgrade to Club Membership section
+		 */
+
+		add_filter( 'cosmbp_advertising_place', function(){
+
+			$fire_icon = '<img draggable="false" role="img" class="emoji" alt="🔥" src="' . COSMBP_ASSETS . '/img/fire-icon.svg' . '">';
+
+			$upsale_notice = '<h3>' . $fire_icon . ' All Access Membership ' . $fire_icon . '</h3>';
+			$upsale_notice .= '<p>Unlock all 19 premium WooCommerce plugins with one club membership. <a href="' . self::CLUB_MEMBERSHIP_LINK . '">Join the Club</a></p>';
+
+			return wp_kses_post( $upsale_notice );
+		}  );
+
+		\CSF::createSection( $prefix, array(
+			'title'  => '<span style="position: absolute;z-index: 1;right: 30px;top: 15px;background-color: white;padding: .2em .5em;border-radius: 6px;color: black;transform: rotate(-16deg);">New</span>Upgrade to Club Membership',
+			'icon'   => 'fas fa-lock',
+			'fields' => array(
+				array(
+					'type'    => 'notice',
+					'style'   => 'info',
+					'content' => apply_filters( 'cosmbp_advertising_place', '' ),
+				),
+				array(
+					'type'    => 'callback',
+					'function' => function(){
+						echo '<p><a href="' . self::CLUB_MEMBERSHIP_LINK . '"> <img style="max-width: 100%" src="' . COSMBP_ASSETS . '/img/pro-bp-plugins.png' . '"> </a></p>';
+					},
+				),
+			) ,
+		) );
 
     }
     public function bp_admin_menu() {

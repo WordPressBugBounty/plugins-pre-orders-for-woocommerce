@@ -2,11 +2,11 @@
 Contributors: brightvesseldev, kleinmannbrightvessel
 Requires at least: 5.0
 Tags: preorders,pre order,pre-orders,preorder
-Requires PHP: 7.2
-WC tested up to: 8.8.3
-Tested up to: 6.7.1
+Requires PHP: 7.4
+WC tested up to: 10.1.0
+Tested up to: 6.8.2
 WC requires at least: 4.0
-Stable tag: 2.0.2
+Stable tag: 2.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,7 +18,7 @@ An efficient system that easily translates to the specific needs of store, our p
 
 In the last 2 years, we have now a whopping 7000+ stores using our plugin. We are very grateful for the community of users and we are always here to help.
 
-[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro)
+[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro) | [Upgrade with Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
 
 = What is a Pre-Order plugin for WooCommerce? =
 Our Preorders for WooCommerce plugin is an efficient system that easily translates to the specific needs of the store, our plugin allows you to follow up on pre-sales in a comprehensive way.
@@ -85,7 +85,7 @@ If you choose this mode, then the customer will get one order for all in-stock p
 **Case #4 – Allow only pre-orders.**
 Use this mode if you want to only allow your customers to either choose pre-order products or available ones.
 
-[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro)
+[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro) | [Upgrade with Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
 
 = CHECK OUT OUR VIDEO DEMO ON HOW THIS WORKS: =
 [youtube https://youtu.be/RPM_J8_dx4U]
@@ -103,7 +103,11 @@ Use this mode if you want to only allow your customers to either choose pre-orde
 >
 > “Niloy did an excellent job helping us fix a few issues we found with the plugin. He responded quickly!”. -tcibene
 
-## 🔥 SOME OF OUR PREMIUM PLUGINS ##
+## 🔥 ALL ACCESS MEMBERSHIP 🔥 ##
+
+Unlock all 19 premium WooCommerce plugins with one club membership. [Join the Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
+
+## SOME OF OUR PREMIUM PLUGINS ##
 
 [Additional Variation Images for WooCommerce](https://brightplugins.com/additional-variation-images-for-woocommerce/)
 [Min/Max Quantities for WooCommerce](https://brightplugins.com/min-max-quantities-for-woocommerce-review/)
@@ -114,7 +118,7 @@ Use this mode if you want to only allow your customers to either choose pre-orde
 
 You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team helps validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/pre-orders-for-woocommerce)
 
-## 🔥 SOME OF OUR FREE PLUGINS ##
+## SOME OF OUR FREE PLUGINS ##
 
 [Custom Order Status Manager for WooCommerce](https://wordpress.org/plugins/bp-custom-order-status-for-woocommerce/) allows you to create, delete and edit order statuses to control the flow of your orders better.
 [Order Delivery Date Time & Pickup for WooCommerce](https://wordpress.org/plugins/bp-order-date-time-for-woocommerce/) During the checkout process, customers can effortlessly choose a delivery date and time for their orders.
@@ -174,6 +178,9 @@ This plugin works on the backend, so it will not affect your theme in most cases
 We do take feature requests [here](https://app.productstash.io/bright-plugins#/ideas).
 
 == Changelog ==
+
+= 2.1 – 13 Aug 2025 =
+* Fixed: Notice: Function _load_textdomain_just_in_time was called incorrectly.
 
 = 2.0.2 – 28 Nov 2024 =
 * Fixed: `_load_textdomain_just_in_time` issue with WordPress 6.7.1
