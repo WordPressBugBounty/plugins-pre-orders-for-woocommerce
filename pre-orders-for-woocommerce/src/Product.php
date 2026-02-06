@@ -21,13 +21,18 @@ class Product {
 	 * @param $variableId
 	 */
 	public function __construct( $productId, $variableId = 0 ) {
-		$this->product = wc_get_product( $productId );
-		if ( 'yes' === get_post_meta( $this->product->get_id(), '_is_pre_order', true ) && new \DateTime( get_post_meta( $this->product->get_id(), '_pre_order_date', true ) ) > new \DateTime() ) {
-			$this->isPreOrder   = true;
-			$this->preOrderDate = get_post_meta( $this->product->get_id(), '_preorder_date', true );
-		} elseif ( 'yes' === get_post_meta( $variableId, '_is_pre_order', true ) && new \DateTime( get_post_meta( $variableId, '_pre_order_date', true ) ) > new \DateTime() ) {
-			$this->isPreOrder   = true;
-			$this->preOrderDate = get_post_meta( $variableId, '_preorder_date', true );
+
+		try {
+			$this->product = wc_get_product( $productId );
+			if ( 'yes' === get_post_meta( $this->product->get_id(), '_is_pre_order', true ) && new \DateTime( get_post_meta( $this->product->get_id(), '_pre_order_date', true ) ) > new \DateTime() ) {
+				$this->isPreOrder   = true;
+				$this->preOrderDate = get_post_meta( $this->product->get_id(), '_preorder_date', true );
+			} elseif ( 'yes' === get_post_meta( $variableId, '_is_pre_order', true ) && new \DateTime( get_post_meta( $variableId, '_pre_order_date', true ) ) > new \DateTime() ) {
+				$this->isPreOrder   = true;
+				$this->preOrderDate = get_post_meta( $variableId, '_preorder_date', true );
+			}
+		} catch (\Throwable $th) {
+			//throw $th;
 		}
 	}
 

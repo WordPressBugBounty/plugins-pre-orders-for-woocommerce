@@ -26,7 +26,7 @@ class Checkout {
 
 		add_action( 'woocommerce_checkout_update_order_meta', [$this, 'managePreOrders'], 10, 2 );
 		add_action( 'woocommerce_order_status_changed', [$this, 'emailNotifications'], 10, 4 );
-		add_filter( 'woocommerce_payment_complete_order_status', [$this, 'setPreroderStatus'], 10, 3 );
+		add_filter( 'woocommerce_payment_complete_order_status', [$this, 'set_preorder_status'], 10, 3 );
 		add_filter( 'woocommerce_billing_fields', [$this, 'addShippingDateField'] );
 		// send pre-order emails for payment gateways that utilize webhooks.
 		add_action( 'woocommerce_payment_complete', [$this, 'sendEmailsWebhookEvents'], 10, 2 );
@@ -51,22 +51,30 @@ class Checkout {
 		}
 		return $status;
 	}
+
 	/**
 	 * Set main order status 'pre-ordered' after payment complete
+	 * 
+	 * Improved since 2.3
 	 *
-	 * @param  [string] $status
-	 * @param  [int]    $order_id
-	 * @param  [type]   $order
-	 * @return status
+	 * @param string   $status    Order status.
+	 * @param int      $order_id  Order ID.
+	 * @param WC_Order $this      Order object.
+	 * 
+	 * @return string status
 	 */
-	public function setPreroderStatus( $status, $order_id, $order ) {
-		/*if ( get_post_meta( $order_id, '_preorder_date', true ) ) {
-			return 'pre-ordered';
-		}*/
-		$order = wc_get_order( $order_id );
-		if ( $order->get_meta( '_preorder_date' ) ) {
+	public function set_preorder_status( $status, $order_id, $order ) {
+
+		//...
+		if( !$order instanceof \WC_Order ){
+			return $status;
+		}
+
+		//...
+		if ( !empty( $order->get_meta( '_preorder_date' ) ) ) {
 			return 'pre-ordered';
 		}
+
 		return $status;
 	}
 	/**
@@ -86,6 +94,21 @@ class Checkout {
 	 */
 	public function sendEmailsWebhookEvents( $order_id, $transaction_id ) {
 
+		//...
+		$order = wc_get_order( $order_id );
+
+		if( !$order instanceof \WC_Order ) {
+			return;
+		}
+
+		//...
+		$was_preorder_email_sent = $order->get_meta( '_preorder_email_sent' ) == 1;
+
+		if( $was_preorder_email_sent ) {
+			return;
+		}
+
+		//...
 		$payment_methods = array(
 			'pay_gateway',
 			'mollie_wc_gateway',
@@ -110,6 +133,9 @@ class Checkout {
 			// Sends appropriate pre-order emails.
 			WC()->mailer()->get_emails()['WC_New_Customer_Pre_Order_Email']->trigger( $order_id );
 			WC()->mailer()->get_emails()['WC_New_Pre_Order_Email']->trigger( $order_id );
+
+			$order->add_meta_data( '_preorder_email_sent', true );
+			$order->save();
 		}
 
 	}
@@ -123,6 +149,14 @@ class Checkout {
 	 * @return void
 	 */
 	public function emailNotifications( $order_id, $old_status, $new_status, $order ) {
+		
+		//...
+		$was_preorder_email_sent = $order->get_meta( '_preorder_email_sent' ) == 1;
+
+		if( $was_preorder_email_sent ) {
+			return;
+		}
+
 		$valid_old_statuses = ( 'pending' == $old_status || 'on-hold' == $old_status || 'failed' == $old_status );
 		if ( $valid_old_statuses && is_checkout() && 'pre-ordered' == $new_status ) {
 
@@ -130,6 +164,9 @@ class Checkout {
 			WC()->mailer()->get_emails()['WC_New_Customer_Pre_Order_Email']->trigger( $order_id );
 			// Send "New Email" notification (to admin)
 			WC()->mailer()->get_emails()['WC_New_Pre_Order_Email']->trigger( $order_id );
+
+			$order->add_meta_data( '_preorder_email_sent', true );
+			$order->save();
 		}
 	}
 

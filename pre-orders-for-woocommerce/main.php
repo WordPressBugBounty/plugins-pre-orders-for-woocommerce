@@ -3,12 +3,12 @@
  * Plugin Name: Pre-Orders for WooCommerce
  * Plugin URI: https://wordpress.org/plugins/pre-orders-for-woocommerce/
  * Description: Ultimate Preorders Plugin for WooCommerce.
- * Version: 2.1
+ * Version: 2.3
  * Requires PHP: 7.4
  * Domain Path: /languages/
  * Requires Plugins: woocommerce
- * WC tested up to: 10.1.0
- * Tested up to: 6.8.2
+ * WC tested up to: 10.3.4
+ * Tested up to: 6.8.3
  * WC requires at least: 5.0
  * Author: Bright Plugins
  * Author URI: https://brightplugins.com
@@ -28,7 +28,9 @@ if ( !defined( 'WCPO_PLUGIN_URL' ) ) {
 	define( 'WCPO_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 define( 'WCPO_TEMPLATE_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) . '/templates/' );
-define( 'WCPO_PLUGIN_VER', '2.1' );
+define( 'WCPO_PLUGIN_VER', '2.3' );
+
+define( 'PFWBP_ASSETS', plugins_url( '', __FILE__ ) . '/media' );
 
 use Woocommerce_Preorders\Bootstrap;
 
@@ -37,7 +39,7 @@ add_action( 'before_woocommerce_init', function () {
 		\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'custom_order_tables', __FILE__, true );
 	}
 	if ( class_exists( '\Automattic\WooCommerce\Utilities\FeaturesUtil' ) ) {
-			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', __FILE__, false );
+			\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'cart_checkout_blocks', __FILE__, true );
 		}
 } );
 
@@ -57,7 +59,15 @@ function appsero_init_tracker_pre_orders_for_woocommerce() {
 
 appsero_init_tracker_pre_orders_for_woocommerce();
 
-NS7_RDNC::instance()->add_notification( 152, '9d7bd777a9d8055e', 'https://brightplugins.com' );
+/**
+ * 
+ */
+$can_new_version_be_instantiated = isset( NS7_RDNC::$version ) && version_compare( NS7_RDNC::$version, '2.0', '>=' );
+if( $can_new_version_be_instantiated ) {
+	NS7_RDNC::instance()->add_notification( 253, '5854f1a22c3b5d76', 'https://brightplugins.com', 6, 'pre-order-options' );
+}
+
+
 final class Bright_Plugins_PFW {
 
 	/**

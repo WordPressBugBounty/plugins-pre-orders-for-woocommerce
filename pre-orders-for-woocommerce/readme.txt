@@ -3,10 +3,10 @@ Contributors: brightvesseldev, kleinmannbrightvessel
 Requires at least: 5.0
 Tags: preorders,pre order,pre-orders,preorder
 Requires PHP: 7.4
-WC tested up to: 10.1.0
-Tested up to: 6.8.2
+WC tested up to: 10.3.4
+Tested up to: 6.8.3
 WC requires at least: 4.0
-Stable tag: 2.1
+Stable tag: 2.3
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -18,7 +18,7 @@ An efficient system that easily translates to the specific needs of store, our p
 
 In the last 2 years, we have now a whopping 7000+ stores using our plugin. We are very grateful for the community of users and we are always here to help.
 
-[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro) | [Upgrade with Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
+[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description_wp-org&utm_campaign=upgrade_pro) | [Upgrade with Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
 
 = What is a Pre-Order plugin for WooCommerce? =
 Our Preorders for WooCommerce plugin is an efficient system that easily translates to the specific needs of the store, our plugin allows you to follow up on pre-sales in a comprehensive way.
@@ -27,7 +27,7 @@ Our Preorders for WooCommerce plugin is an efficient system that easily translat
 Allowing WooCommerce Pre-orders in your store is a great opportunity to gain new customers or engage older ones. Engaging with your customers is critical before a product release, which is why we’ve created a plugin that covers all bases. Give customers a chance to pre-order so they’ll get their new item just as it becomes available.
 
 
-**This plugin is the lite version of the [Pre-Orders for WooCommerce Pro](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro) plugin. It is packed with several features, but Pro allows for several different types of pre-order buying scenarios.**
+**This plugin is the lite version of the [Pre-Orders for WooCommerce Pro](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description_wp-org&utm_campaign=upgrade_pro) plugin. It is packed with several features, but Pro allows for several different types of pre-order buying scenarios.**
 
 ### 🌟 Pre-Orders for WooCommerce Free Version Features:
 
@@ -85,7 +85,7 @@ If you choose this mode, then the customer will get one order for all in-stock p
 **Case #4 – Allow only pre-orders.**
 Use this mode if you want to only allow your customers to either choose pre-order products or available ones.
 
-[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-description&utm_campaign=upgrade_pro) | [Upgrade with Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
+[__Documentation__](https://brightplugins.com/docs-category/preorder-for-woocommerce/) | [__Support__](https://brightplugins.com/support/) | [__Upgrade To Pro »__](https://brightplugins.com/product/woocommerce-pre-orders-plugin/?utm_source=wp-org&utm_medium=plugin-descriptio_wp-orgn&utm_campaign=upgrade_pro) | [Upgrade with Club](https://brightplugins.com/product/club-membership/?utm_source=freemium&utm_medium=wp_org_page&utm_campaign=upgrade_club_membership)
 
 = CHECK OUT OUR VIDEO DEMO ON HOW THIS WORKS: =
 [youtube https://youtu.be/RPM_J8_dx4U]
@@ -178,6 +178,14 @@ This plugin works on the backend, so it will not affect your theme in most cases
 We do take feature requests [here](https://app.productstash.io/bright-plugins#/ideas).
 
 == Changelog ==
+
+= 2.3 – 29 Nov 2025 =
+* New: Stock availability text: 'preorder available' instead of 'in stock' for preorder products - Product page 
+* New: Support for Woo Blocks - Checkout Page
+* Fixed: Error with WooCommerce Email Previews
+
+= 2.2 – 05 Nov 2025 =
+* Support for WooCommerce 10.3.4
 
 = 2.1 – 13 Aug 2025 =
 * Fixed: Notice: Function _load_textdomain_just_in_time was called incorrectly.

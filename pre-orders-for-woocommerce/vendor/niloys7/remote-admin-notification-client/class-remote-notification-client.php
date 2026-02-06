@@ -19,6 +19,9 @@
  * This class refactor and modify by Niloy
  * @link https://github.com/Niloys7/remote-admin-notification-client
  * @since 2022
+ * 
+ * Changes made by Bright Plugins since version 2.0
+ * @since 2025
  */
 
 // If this file is called directly, abort.
@@ -43,6 +46,22 @@ if ( !class_exists( 'NS7_RDNC' ) ) {
 		 * @var string
 		 */
 		public $wordpress_version_required = '5.0';
+
+		/**
+		 * Permitted urls to display the notifications
+		 *
+		 * @since 2.0
+		 * @var array
+		 */
+		public $permitted_urls = array();
+
+		/**
+		 * Library version
+		 *
+		 * @since 2.0
+		 * @var string
+		 */
+		public static $version = '2.0';
 
 		/**
 		 * Required version of PHP.
@@ -192,10 +211,14 @@ if ( !class_exists( 'NS7_RDNC' ) ) {
 		 * @param string $channel_key Channel key for authentication with the server
 		 * @param string $server      Notification server URL
 		 * @param int    $cache       Cache lifetime (in hours)
+		 * @param string $plugin_page_url Plugin page url where the notice will show up
 		 *
 		 * @return bool|string
 		 */
-		public function add_notification( $channel_id, $channel_key, $server, $cache = 6 ) {
+		public function add_notification( $channel_id, $channel_key, $server, $cache = 6, $plugin_page_url = '' ) {
+			
+			//...
+			$this->permitted_urls[] = $plugin_page_url;
 
 			$notification = array(
 				'channel_id'     => (int) $channel_id,
@@ -274,6 +297,15 @@ if ( !class_exists( 'NS7_RDNC' ) ) {
 		 * @return void
 		 */
 		public function show_notices() {
+
+			/**
+			 * Only continues if it is on the plugin settings page
+			 */
+			$is_plugin_settings_page = !empty( $_GET['page'] ) && in_array( $_GET['page'], $this->permitted_urls, true );
+
+			if ( !$is_plugin_settings_page ) {
+				return;
+			}
 
 			foreach ( $this->notifications as $id => $notification ) {
 

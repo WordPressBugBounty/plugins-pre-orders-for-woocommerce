@@ -1,0 +1,73 @@
+/* Pre-order Date Picker - WooCommerce Blocks Integration */
+
+/* Main container styling - matches JavaScript className */
+.wc-block-components-text-input.preorder-date-picker-container {
+    margin: 1rem 0;
+}
+
+/* Label styling - matches JavaScript className */
+.wc-block-components-text-input.preorder-date-picker-container .wc-block-components-text-input__label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    padding: 2.5rem 1rem 1.5rem 1.3rem;
+}
+
+/* Input styling - matches JavaScript className */
+.wc-block-components-text-input.preorder-date-picker-container .wc-block-components-text-input__input {
+    width: 100%;
+    padding: 2rem 0.75rem 0.75rem 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.wc-block-components-text-input.preorder-date-picker-container .wc-block-components-text-input__input:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 2px rgba(0, 124, 186, 0.1);
+}
+
+/* Integration with WooCommerce Blocks totals wrapper */
+.wc-block-components-totals-wrapper .wc-block-components-text-input.preorder-date-picker-container {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+/* Order details page styling */
+.preorder-date-info {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border-left: 4px solid #007cba;
+}
+
+.preorder-date-info h3 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.preorder-date-info p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .wc-block-components-text-input.preorder-date-picker-container {
+        margin: 1rem 0;
+    }
+    
+    .wc-block-components-text-input.preorder-date-picker-container .wc-block-components-text-input__input {
+        padding: 0.625rem;
+        font-size: 0.9rem;
+    }
+}

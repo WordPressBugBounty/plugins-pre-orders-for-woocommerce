@@ -389,7 +389,7 @@ class Settings {
 
 		add_filter( 'cosmbp_advertising_place', function(){
 
-			$fire_icon = '<img draggable="false" role="img" class="emoji" alt="🔥" src="' . COSMBP_ASSETS . '/img/fire-icon.svg' . '">';
+			$fire_icon = '<img draggable="false" role="img" class="emoji" alt="🔥" src="' . PFWBP_ASSETS . '/img/fire-icon.svg' . '">';
 
 			$upsale_notice = '<h3>' . $fire_icon . ' All Access Membership ' . $fire_icon . '</h3>';
 			$upsale_notice .= '<p>Unlock all 19 premium WooCommerce plugins with one club membership. <a href="' . self::CLUB_MEMBERSHIP_LINK . '">Join the Club</a></p>';
@@ -409,7 +409,7 @@ class Settings {
 				array(
 					'type'    => 'callback',
 					'function' => function(){
-						echo '<p><a href="' . self::CLUB_MEMBERSHIP_LINK . '"> <img style="max-width: 100%" src="' . COSMBP_ASSETS . '/img/pro-bp-plugins.png' . '"> </a></p>';
+						echo '<p><a href="' . self::CLUB_MEMBERSHIP_LINK . '"> <img style="max-width: 100%" src="' . PFWBP_ASSETS . '/img/pro-bp-plugins.png' . '"> </a></p>';
 					},
 				),
 			) ,

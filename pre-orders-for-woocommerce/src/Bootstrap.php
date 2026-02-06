@@ -2,6 +2,9 @@
 
 namespace Woocommerce_Preorders;
 
+use Woocommerce_Preorders\Blocks\Checkout\CheckoutBlocks;
+use Woocommerce_Preorders\Pages\ProductPage;
+
 class Bootstrap {
 	/**
 	 * @var string
@@ -48,7 +51,10 @@ class Bootstrap {
 		$this->initializeShop();
 		$this->initializeOrder();
 		new Elementor();
+		$this->initializeCheckoutBlocks();
 		//error_log( 'cosmSettingsTab' );
+
+		ProductPage::init();
 	}
 	
 	/**
@@ -374,5 +380,9 @@ class Bootstrap {
 
 	public function initializeOrder() {
 		new Order();
+	}
+
+	public function initializeCheckoutBlocks() {
+		new CheckoutBlocks();
 	}
 }
