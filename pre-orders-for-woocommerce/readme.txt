@@ -3,10 +3,10 @@ Contributors: brightvesseldev, kleinmannbrightvessel
 Requires at least: 5.0
 Tags: preorders,pre order,pre-orders,preorder
 Requires PHP: 7.4
-WC tested up to: 10.3.4
-Tested up to: 6.8.3
+WC tested up to: 11.1.0
+Tested up to: 7.1
 WC requires at least: 4.0
-Stable tag: 2.3
+Stable tag: 2.3.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -178,6 +178,10 @@ This plugin works on the backend, so it will not affect your theme in most cases
 We do take feature requests [here](https://app.productstash.io/bright-plugins#/ideas).
 
 == Changelog ==
+
+= 2.3.1 – 07 Sept 2026 =
+* Support for WordPress 7.1
+* Support for WooCommerce 11.1.x
 
 = 2.3 – 29 Nov 2025 =
 * New: Stock availability text: 'preorder available' instead of 'in stock' for preorder products - Product page 
