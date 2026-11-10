@@ -3,10 +3,10 @@ Contributors: brightvesseldev, kleinmannbrightvessel
 Requires at least: 5.0
 Tags: preorders,pre order,pre-orders,preorder
 Requires PHP: 7.4
-WC tested up to: 11.1.0
+WC tested up to: 11.2.2
 Tested up to: 7.1
 WC requires at least: 4.0
-Stable tag: 2.3.1
+Stable tag: 2.3.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -178,6 +178,10 @@ This plugin works on the backend, so it will not affect your theme in most cases
 We do take feature requests [here](https://app.productstash.io/bright-plugins#/ideas).
 
 == Changelog ==
+
+= 2.3.2 – 10 Nov 2026 =
+* Security Fix: Resolved a vulnerability handling pre-order date validation in the Store API.
+* Fix: Prevent PHP warning in Shop::changeButtonText() when $post is null.
 
 = 2.3.1 – 07 Sept 2026 =
 * Support for WordPress 7.1

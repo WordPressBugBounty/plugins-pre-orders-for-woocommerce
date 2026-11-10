@@ -122,33 +122,32 @@ class CheckoutBlocks {
      */
     public function save_pre_order_date_blocks($order, $request) {
 
-        // Get the pre-order date from the request extensions
+        /**
+         * Get the pre-order date requested by the customer (untrusted).
+         */
         $extensions = $request->get_param('extensions');
-        $pre_order_date = null;
-        
-        // Get pre-order date from our plugin extension data
+        $requested_date = '';
         if (isset($extensions['preorder-date-picker']['pre_order_date'])) {
-            $pre_order_date = $extensions['preorder-date-picker']['pre_order_date'];
+            $requested_date = $extensions['preorder-date-picker']['pre_order_date'];
         }
-        
-        // If pre-order date is not set, get the oldest date of pre-order products
-        if (!empty($pre_order_date)) {
-            $pre_order_date = sanitize_text_field($pre_order_date);
-        }
-        else {
-			$cart = \WC()->cart->get_cart();
-			$this->cart->checkPreOrderProducts( $cart );
-			if ( count( $this->cart->getPreOrderProducts() ) > 0 ) {
-				$pre_order_date = str_replace( [' 00:00:00'], [''], $this->cart->getOldestDate() );
-			}
-            else {
-                return;
+
+        /**
+         * Eligibility and the minimum date come from the merchant's product data, never the request.
+         */
+        $pre_order_date = $this->cart->resolvePreOrderDate( \WC()->cart->get_cart(), $requested_date );
+
+        if ( '' === $pre_order_date ) {
+            // Not a pre-order: drop any stale value (e.g. a reused draft order) and ignore the extension.
+            if ( $order->get_meta( '_preorder_date' ) ) {
+                $order->delete_meta_data( '_preorder_date' );
+                $order->save();
             }
+            return;
         }
 
         $order->update_meta_data('_preorder_date', $pre_order_date);
-        $order->save(); 
-        
+        $order->save();
+
     }
 
 

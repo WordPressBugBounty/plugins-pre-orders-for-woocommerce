@@ -274,17 +274,10 @@ class Checkout {
 		 * Case #1: treat the whole order as a pre-order
 		 * Check if the order is of type partial or individual, and if not set the whole order as pre-ordered
 		 */
-		if ( isset( $data['preorder_date'] ) ) {
-			$order->update_meta_data( '_preorder_date', esc_attr( $data['preorder_date'] ) );
-
-		} else {
-			global $woocommerce;
-			$cart = $woocommerce->cart->get_cart();
-			$this->cart->checkPreOrderProducts( $cart );
-			if ( \count( $this->cart->getPreOrderProducts() ) > 0 ) {
-				$oldestDate = str_replace( [' 00:00:00'], [''], $this->cart->getOldestDate() );
-				$order->update_meta_data( '_preorder_date', esc_attr( $oldestDate ) );
-			}
+		$requestedDate = isset( $data['preorder_date'] ) ? $data['preorder_date'] : '';
+		$preOrderDate  = $this->cart->resolvePreOrderDate( WC()->cart->get_cart(), $requestedDate );
+		if ( '' !== $preOrderDate ) {
+			$order->update_meta_data( '_preorder_date', $preOrderDate );
 		}
 		$order->save();
 

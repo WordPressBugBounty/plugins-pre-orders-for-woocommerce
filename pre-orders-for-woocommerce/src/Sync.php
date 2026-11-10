@@ -29,8 +29,17 @@ class Sync {
 					}
 
 				} else {
-					if ( $order->get_status() == 'pre-ordered' && $order->payment_complete() ) {
-						$order->update_status( apply_filters( 'change_order_status_on_preorder_date', 'wc-completed' ), '[WooCommerce Pre Orders] ' );
+
+					$is_valid = true;
+					$selected_transition_status = apply_filters( 'change_order_status_on_preorder_date', 'wc-completed' );
+
+					if ( in_array( $selected_transition_status, ['wc-completed'], true ) ) {
+						$is_valid = $order->is_paid();
+					}
+
+					if ( $order->get_status() == 'pre-ordered' && $is_valid ) {
+
+						$order->update_status( $selected_transition_status, '[WooCommerce Pre Orders] ' );
 					}
 				}
 			}

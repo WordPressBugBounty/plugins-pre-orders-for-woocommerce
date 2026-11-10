@@ -177,7 +177,7 @@ class Shop {
 	public function changeButtonText( $text ) {
 		global $post, $product;
 
-		if ( null !== $product ) {
+		if ( null !== $product && isset( $post ) && isset( $post->ID ) ) {
 			if ( 'yes' == get_post_meta( $post->ID, '_is_pre_order', true ) && strtotime( get_post_meta( $post->ID, '_pre_order_date', true ) ) > time() ) {
 				return get_option( 'wc_preorders_button_text', 'Pre Order Now!' );
 			}
